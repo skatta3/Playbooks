@@ -1,12 +1,12 @@
- - name: This is a test playbook to check error handling
-   hosts: localhost
-   tasks:	
-	- name: Create user1
-	  user:
-		name: user1
-		state: presen
-	  ignore_errors: yes
-	- name: Create user2
-	  user:
-		name: user2
-		state: present
+- name: This is a test playbook to check error handling
+  hosts: localhost
+  tasks:	
+  - name: Create user1
+    user:
+      name: user1
+      state: presen
+    ignore_errors: yes
+    - name: Create user2
+      user:
+	name: user2
+	state: present
