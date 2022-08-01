@@ -6,7 +6,7 @@
       name: user1
       state: presen
     ignore_errors: yes
-    - name: Create user2
-      user:
-	name: user2
-	state: present
+  - name: Create user2
+    user:
+      name: user2
+      state: present
