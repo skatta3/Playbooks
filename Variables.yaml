@@ -3,6 +3,6 @@
   become: yes
   tasks:
   - name: install a package
-    yum:
+    package:
      name:  "{{package_name}}"
      state: present
