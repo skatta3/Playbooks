@@ -1,0 +1,19 @@
+---
+- name: My First playbook
+  hosts: Server3
+  become: yes
+  tasks:
+  - name: install git
+    package:
+     name: git
+     state: present
+
+
+
+
+
+
+
+
+
+
