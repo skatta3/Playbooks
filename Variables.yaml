@@ -1,0 +1,8 @@
+---
+- hosts: all  
+  become: yes
+  tasks:
+  - name: install a package
+    yum:
+     name:  "{{package_name}}"
+     state: present
